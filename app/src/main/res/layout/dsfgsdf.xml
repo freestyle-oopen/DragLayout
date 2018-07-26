@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="第三章 这个是标题"
+        android:textColor="#393939"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/btn_two_on" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon"
+            android:text="2018.02.03"
+            android:layout_marginLeft="8dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/date"
+            android:text="13:25"
+            android:layout_marginLeft="8dp"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/page_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="13"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:lines="2"
+        android:background="#e4f6ff"
+        android:text="国家开放大学副校长刘成在开班仪式上致辞并提出三点建议，一是不忘初心坚持非学历教育与学历教育并举，其实测是学习效率的提高，和学习积极性。"
+        android:textColor="#393939"
+        android:textSize="12sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/ji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#838383"
+            android:text="记："/>
+        <TextView
+            android:id="@+id/biji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text="这是我记得笔记一是不忘初心坚持非学历教育与学历教育并举，其实测是学习效率的提高，和学习积极性。"
+            android:textColor="#838383"
+            android:layout_toRightOf="@+id/ji"
+            android:textSize="11sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#c2c2c2"/>
+
+</LinearLayout>
